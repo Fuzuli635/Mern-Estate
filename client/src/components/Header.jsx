@@ -34,7 +34,6 @@ export default function Header() {
             </li>
           </Link>
           <Link to="/profile">
-            
             {currentUser ? (
               <img
                 className="rounded-full h-7 w-7 object-cover"
@@ -42,7 +41,10 @@ export default function Header() {
                 alt="profile"
               />
             ) : (
-              <li className=" text-slate-700 hover:underline"> Sign in</li>
+              <li className=" text-white  hover:text-slate-300 cursor-pointer  sm:inline">
+                {" "}
+                Sign in
+              </li>
             )}
           </Link>
         </ul>
